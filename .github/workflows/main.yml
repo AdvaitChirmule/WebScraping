@@ -28,5 +28,5 @@ jobs:
 
     - name: Run Selenium tests
       run: |
-        python your_selenium_test_script.py
+        python truthsocial_github.py
 
