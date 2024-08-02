@@ -19,6 +19,7 @@ url = 'https://truthsocial.com/login'
 driver.get(url)
 
 time.sleep(2)
+driver.save_screenshot('screenshot.png')
 signin = WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.XPATH, ".//*[contains(text(), 'Sign In')]"))).click()
 time.sleep(2)
 
