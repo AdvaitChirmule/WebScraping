@@ -9,7 +9,10 @@ from selenium.webdriver.common.by import By
 
 import time
 chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
 chrome_options.add_argument("--disable-notifications")
+chrome_options.add_argument('--headless')
 driver = webdriver.Chrome(options=chrome_options)
 
 url = 'https://truthsocial.com/login'
