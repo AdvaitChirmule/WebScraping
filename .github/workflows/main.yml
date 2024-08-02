@@ -36,6 +36,3 @@ jobs:
     - name: Run Selenium tests
       run: |
         python truthsocial_github.py  # Replace with your actual script name
-
-      run: |
-        python truthsocial_github.py  # Replace with your script's name
