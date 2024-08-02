@@ -35,3 +35,9 @@ jobs:
       run: |
         python truthsocial_github.py
 
+    - name: Upload screenshot
+      uses: actions/upload-artifact@v2
+      with:
+        name: screenshot
+        path: screenshot.png
+
